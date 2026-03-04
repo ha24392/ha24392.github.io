@@ -7,21 +7,25 @@
   
   <h1>Survey</h1>
   <p>Please confirm you are not a robot to access the survey:</p>
-  <form action="/submit" method="POST">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
+  <form action="/submit" method="POST" style="width: 600px;">
     
     <!-- CAPTCHA will be automatically inserted here -->
-    <div class="xsukax-captcha"></div>
+    <div id="bot-check" class="xsukax-captcha"></div>
     
     <button type="submit">Submit</button>
 </form>
+
+<script>
+    function verifyCaptcha() {
+        const captchaVerified = window.xsukaxCAPTCHA.isVerified('bot-check');
+        if(captchaVerified) {
+            console.log("CAPTCHA Verified!")
+        }
+
+        setTimeout(function() { verifyCaptcha(); }, 250);
+    }
+
+    setTimeout(function() { verifyCaptcha(); }, 500);
+</script>
 </body>
 </html>
