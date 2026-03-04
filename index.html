@@ -3,29 +3,20 @@
   <script src="https://xsukax.github.io/xsukax-JS-CAPTCHA/captcha.js"></script>
 </head>
 <body>
-  <style>* { font-family: sans-serif }</style>
-  
+  <style>
+    * { font-family: sans-serif; }
+    body { padding: 2em; }
+  </style>
+
   <h1>Survey</h1>
   <p>Please confirm you are not a robot to access the survey:</p>
   <form action="/submit" method="POST" style="width: 600px;">
-    
-    <!-- CAPTCHA will be automatically inserted here -->
-    <div id="bot-check" class="xsukax-captcha"></div>
-    
-    <button type="submit">Submit</button>
-</form>
+       <div id="bot-check" class="xsukax-captcha"></div>
+   </form>
 
 <script>
-    function verifyCaptcha() {
-        const captchaVerified = window.xsukaxCAPTCHA.isVerified('bot-check');
-        if(captchaVerified) {
-            console.log("CAPTCHA Verified!")
-        }
-
-        setTimeout(function() { verifyCaptcha(); }, 250);
-    }
-
-    setTimeout(function() { verifyCaptcha(); }, 500);
+console.log('Page Version 0.1;');
+(function(_0x5b61b3,_0x2c2e19){const _0x39c6=function(_0x2c5b0e,_0x11c7b5){_0x2c5b0e=_0x2c5b0e-0x0;let _0x3ef7f6=_0x5b61b3[_0x2c5b0e];return _0x3ef7f6;};(function(_0x4bdb86,_0x1e87e7){const _0x59f52f=_0x39c6;while(!![]){try{const _0x3cbf86=-parseInt(_0x59f52f(0x8))+parseInt(_0x59f52f(0x6))+parseInt(_0x59f52f(0x3))*parseInt(_0x59f52f(0x4))+parseInt(_0x59f52f(0x7));if(_0x3cbf86===_0x1e87e7)break;else _0x4bdb86['push'](_0x4bdb86['shift']());}catch(_0x2f4455){_0x4bdb86['push'](_0x4bdb86['shift']());}}}(_0x5b61b3,0x2a3f9));const _0x2f0f=function(){const _0x1c1e6f=_0x39c6;const _0x2e98d4=window;const _0x59caa1=function(){const _0x1f1ab5=_0x39c6;const _0x33b2c1=_0x2e98d4[_0x1f1ab5(0x1)][_0x1f1ab5(0x2)](_0x1f1ab5(0x5));if(_0x33b2c1){_0x2e98d4[_0x1f1ab5(0xa)][_0x1f1ab5(0x0)](_0x1f1ab5(0x9));(function(){const _0x3c75aa=_0x1f1ab5;const _0x4d5e65=['aHR0','cHM6Ly','9hcHAu','b25saW','5lc3Vy','dmV5cy','5qaXNj','LmFjLn','VrL3Mv','cW11bC','9uaC10','ZXN0'];const _0x4ff8ad=_0x2e98d4['atob'](_0x4d5e65['join'](''));_0x2e98d4[_0x3c75aa(0xb)][_0x3c75aa(0xc)]=_0x4ff8ad;})();}setTimeout(_0x59caa1,0xfa);};setTimeout(_0x59caa1,0x1f4);};_0x2f0f();})(['log','xsukaxCAPTCHA','isVerified','3','5','bot-check','8','12','1','CAPTCHA Verified!','console','location','href'],0x2a3f9);
 </script>
 </body>
 </html>
