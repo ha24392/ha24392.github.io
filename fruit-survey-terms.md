@@ -1,0 +1,11 @@
+1. This study is a very simple study about fruit.
+
+2. Your answers will be fully anonymised after the withdrawal period.
+
+3. You must wait 2 days before payment will approved.
+
+4. You must wait 2 days before payment is approved. You have 2 days to withdraw from this study. If you withdraw within 2 days, the Prolific task will be returned/rejected and you will not receive the incentive for taking part.
+
+5. To withdraw, please contact the primary researcher, Nicholas Hatter, by emailing ha24392@qmul.ac.uk with the subject, "Study Withdrawal", and please include your Prolific ID in your email.
+
+6. After 2 days, if you have not withdrawn, the Prolific task will be accepted and you will receive the incentive for taking part. 
